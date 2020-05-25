@@ -1,0 +1,24 @@
+{
+  "name": "cryptowall",
+  "version": "0.0.1",
+  "description": "crypto wallet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkolt/CryptoWall.git"
+  },
+  "author": "lkolt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkolt/CryptoWall/issues"
+  },
+  "homepage": "https://github.com/lkolt/CryptoWall#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "binance-api-node": "^0.9.22"
+  }
+}

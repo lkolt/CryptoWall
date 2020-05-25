@@ -1,0 +1,13 @@
+{
+    "exchanges": [ 
+        {
+            "name": "binance",
+            "symbols": ["BTC_USDT"]
+        },
+        {
+            "name": "exchangeratesapi",
+            "url": "https://api.exchangeratesapi.io/latest?base=USD", 
+            "symbols": ["EUR"]
+        }
+    ]
+}
