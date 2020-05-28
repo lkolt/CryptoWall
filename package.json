@@ -1,6 +1,6 @@
 {
   "name": "cryptowall",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "crypto wallet",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/lkolt/CryptoWall#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "binance-api-node": "^0.9.22"
+    "binance-api-node": "^0.9.22",
+    "excel4node": "^1.7.2"
   }
 }

@@ -19,7 +19,7 @@ class exchange_rates_api {
     async run () {
         return new Promise(resolve => {
             axios.get(this.url).then((response) => {
-                let result = []
+                let result = {}
                 for (let symbol of this.symbols) {
                     result[symbol] = response.data.rates[symbol]
                 }

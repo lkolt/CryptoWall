@@ -1,4 +1,5 @@
 {
+    "format": "excel",
     "exchanges": [ 
         {
             "name": "binance",
