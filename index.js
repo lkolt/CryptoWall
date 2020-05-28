@@ -10,14 +10,21 @@ let clients = []
 clients.push(new binance(config))
 clients.push(new exchange_rates_api(config))
 
+let args = ['prices', 'wallet']
+
 let run = async () => {
-    let result = []
+    let result = {}
+    for (let arg of args) result[arg] = {}
+
     for (let client of clients) {
-        let res = await client.run()      
-        result = { ...result, ...res }
+        let res = await client.run() 
+        for (let arg of args) result[arg] = { ...result[arg], ...res[arg] }
     }
+
     if (config.format == "excel") {
-        excel_writer.to_excel(result)  
+        let excel = new excel_writer()
+        for (let arg of args) excel.add_worksheet(arg, result[arg])
+        excel.write()  
     } else {
         console.log(result)
     }

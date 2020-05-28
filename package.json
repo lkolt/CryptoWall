@@ -1,6 +1,6 @@
 {
   "name": "cryptowall",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "crypto wallet",
   "main": "index.js",
   "scripts": {

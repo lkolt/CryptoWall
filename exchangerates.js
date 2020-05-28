@@ -23,7 +23,9 @@ class exchange_rates_api {
                 for (let symbol of this.symbols) {
                     result[symbol] = response.data.rates[symbol]
                 }
-                resolve(result)
+                resolve({
+                    prices: result
+                })
             })  
         })
     }

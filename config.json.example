@@ -3,7 +3,9 @@
     "exchanges": [ 
         {
             "name": "binance",
-            "symbols": ["BTC_USDT"]
+            "symbols": ["BTC_USDT"],
+            "key": "xxx",
+            "secret": "xxx"
         },
         {
             "name": "exchangeratesapi",
